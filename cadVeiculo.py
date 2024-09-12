@@ -7,7 +7,7 @@ from caminhao import Caminhao
 listaVeiculos = [
     Carro("Toyota", 'Etios', 'ABC', 2022, 4),
     Moto("Honda", "CG 160", 'DEF', 2008, 250),
-    Caminhao("volvo", "FH 540", 'GHI', 1995, 2, 9, 6000)
+    Caminhao("volvo", "FH 540", 'GHI', 1995, 2, 6000)
 ]
 
 def cadastrar():
@@ -28,9 +28,8 @@ Qual o tipo de veículo: ''')
     
     elif tipo == '3':
         nPortas = input('Digite o número de portas: ')
-        comprimento = input('Digite o comprimento: ')
         capacidade = input('Digite a capacidade: ')
-        veiculoAdd = Caminhao(marca, modelo, placa, ano, nPortas, comprimento, capacidade)
+        veiculoAdd = Caminhao(marca, modelo, placa, ano, nPortas, capacidade)
 
     listaVeiculos.append(veiculoAdd)
     
